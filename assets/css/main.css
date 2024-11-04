@@ -1821,7 +1821,7 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-facebook-f {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-dribbble {
@@ -1930,7 +1930,7 @@ input, select, textarea {
 
 		.box.style2 {
             background: #fff;
-			padding: 2em 2em 2em 2em;
+			padding: 3em 2em 2em 2em;
             height: 760px;
 		}
 
