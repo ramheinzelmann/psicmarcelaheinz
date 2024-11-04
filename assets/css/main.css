@@ -2082,12 +2082,9 @@ input, select, textarea {
 	}
 
 
-
-
-
 /* Nav */
 
-	#nav {
+    nav {
 		background-color: #81DAF5;
 		text-align: center;
 		position: fixed;
@@ -2098,57 +2095,60 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
-	}
+    }
 
-		#nav ul {
-			margin-bottom: 0;
-			list-style: none;
-			padding-left: 0;
-		}
+    /* Esconde o menu no mobile */
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
 
-		#nav li {
-			display: inline-block;
-			padding-left: 0;
-		}
+    nav ul li a {
+        color: #000;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+    }
 
-		#nav a {
-			-moz-transition: background-color .2s ease-in-out;
-			-webkit-transition: background-color .2s ease-in-out;
-			-ms-transition: background-color .2s ease-in-out;
-			transition: background-color .2s ease-in-out;
-			position: relative;
-			display: block;
-			color: #fff;
-			text-decoration: none;
-			outline: 0;
-			font-weight: 600;
-			border-radius: 8px;
-			color: #fff;
-			height: 2.5em;
-			line-height: 2.5em;
-			padding: 0 1.25em;
-		}
+    /* Botão hamburguer */
+    .menu-toggle {
+        display: none;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        left: 1rem;
+    }
 
-			#nav a:hover {
-				color: #fff !important;
-				background: #084B8A;
-			}
+    /* Estilos para telas menores */
+    @media (max-width: 768px) {
+        nav ul {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
 
-			#nav a.active {
-				background: #424242;
-			}
+        /* Alterando a cor do texto para preto em telas menores */
+        nav ul li a {
+            color: black;
+        }
 
-				#nav a.active:before {
-					content: '';
-					display: block;
-					position: absolute;
-					bottom: -0.6em;
-					left: 50%;
-					margin-left: -0.75em;
-					border-left: solid 0.75em transparent;
-					border-right: solid 0.75em transparent;
-					border-top: solid 0.6em #282828;
-				}
+        .menu-toggle {
+            display: block;
+        }
+    }
+
+    /* Mostra o menu quando ativado */
+    .menu-active ul {
+        background-color: #81DAF5;
+        display: flex;
+    }
+
+
+
+
+
+
 
 /* Articles */
 
