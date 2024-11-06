@@ -2140,7 +2140,7 @@ input, select, textarea {
 
     /* Mostra o menu quando ativado */
     .menu-active ul {
-        background-color: #81DAF5;
+        background-color: #81BEF7;
         display: flex;
     }
 
