@@ -1682,7 +1682,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #81DAF5;
+		background-color: #81BEF7;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 0.90em;
 		max-width: 24em;
@@ -1817,7 +1817,7 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-twitter {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-facebook-f {
@@ -1825,7 +1825,7 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-dribbble {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-linkedin-in {
@@ -1833,19 +1833,19 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-tumblr {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-google-plus {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-github {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-rss {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-instagram {
@@ -1853,31 +1853,31 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-foursquare {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-skype {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-soundcloud {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-youtube {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-blogger {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-flickr {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a.fa-vimeo {
-					background-color: #084B8A;
+					background-color: #ff;
 				}
 
 				ul.social li a:hover {
@@ -1915,7 +1915,7 @@ input, select, textarea {
 	}
 
 		.box.style1 {
-            background: #CEECF5;
+            background: #b1d4e0;
 			padding: 2em 2em 2em 2em;
 			height: 550px;
 		}
@@ -2001,7 +2001,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #CEECF5;
+			background-color: #b1d4e0;
             padding: 5em 0 5em 0;
 		}
 
@@ -2085,7 +2085,7 @@ input, select, textarea {
 /* Nav */
 
     nav {
-		background-color: #81DAF5;
+		background-color: #81BEF7;
 		text-align: center;
 		position: fixed;
 		left: 0;
