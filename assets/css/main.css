@@ -1918,7 +1918,7 @@ input, select, textarea {
 		.box.style1 {
             background: #fafafa;
 			padding: 2em 2em 2em 2em;
-			height: 550px;
+			height: 600px;
 		}
 
 			.box.style1 h3 {
@@ -2562,4 +2562,189 @@ section.box.style1 {
 	.map-container {
 		width: 90%; /* Ocupa 90% da largura da tela */
 	}
+}
+
+/* Container para os botões dentro do Box */
+.box-btn-container {
+    display: flex;
+    justify-content: space-between; /* Garante distribuição uniforme */
+    gap: 15px; /* Espaço entre os botões */
+    margin-top: 5px; /* Separa do texto de cima */
+    padding-top: 20px; /* Um pouco de respiro superior */
+    border-top: 1px solid #eee; /* Opcional: uma linha sutil para separar do texto */
+}
+
+/* Botão LEVE - Saiba Mais (Borda fina, fundo transparente) */
+.btn-small-outline {
+    flex: 1; /* Ocupa metade do espaço */
+    display: flex;
+    justify-content: center; /* Centraliza o texto */
+    align-items: center;
+    font-size: 1rem;       /* AUMENTADO: Tamanho da letra */
+    font-weight: 600;
+    color: #555 !important;
+    border: 1px solid #ccc;
+    padding: 12px 10px;    /* AUMENTADO: Tamanho do botão */
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+    white-space: nowrap; /* Evita quebrar linha */
+}
+
+.btn-small-outline:hover {
+    border-color: #004aad;
+    color: #004aad !important;
+    background-color: #f9f9f9;
+}
+
+/* Botão LEVE - WhatsApp (Verde, mas pequeno) */
+.btn-small-green {
+    flex: 1;
+    display: flex; /* Alterado de inline-flex para flex para garantir alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* O SEGREDO: Centraliza verticalmente o ícone e texto */
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: white !important;
+    background-color: #25d366;
+    border: 1px solid #25d366;
+    padding: 12px 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+    white-space: nowrap;
+
+    /* CORREÇÃO DO SOMBREAMENTO */
+    box-shadow: none !important;  /* Remove sombra da caixa */
+    text-shadow: none !important; /* Remove sombra do texto (que deixa o branco escuro) */
+}
+
+.btn-small-green:hover {
+    background-color: #1ebc57;
+    transform: translateY(-1px);
+}
+
+/* CORREÇÃO DO ÍCONE */
+.btn-small-green i {
+    margin-right: 8px; /* Aumentei um pouco o espaço */
+    margin-top: 0 !important; /* Remove qualquer margem estranha do topo */
+    line-height: 1 !important; /* Reseta a altura da linha para não empurrar o texto */
+    display: block; /* Ajuda no alinhamento flex */
+}
+
+
+/* --- ESTILOS EXTRAS PARA A LANDING PAGE --- */
+
+/* Estilo da Lista (que estava faltando) */
+.lp-list {
+    margin: 20px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+.lp-list li {
+    margin-bottom: 10px;
+    line-height: 1.3;
+    list-style-type: disc; /* Garante as bolinhas */
+}
+.lp-list li {
+    color: #222222 !important; /* Cor cinza bem escuro (quase preto) */
+    opacity: 1 !important;     /* Remove qualquer transparência que deixa o texto "lavado" */
+    font-weight: 400;          /* Garante que a letra tenha um peso normal de leitura */
+}
+
+/* Container dos botões */
+.lp-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+/* Botão Primário (WhatsApp) */
+.lp-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366;
+    color: white !important; /* Força a cor branca */
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid #25d366;
+    transition: all 0.3s;
+    min-width: 180px;
+    text-align: center;
+}
+
+.lp-btn-primary:hover {
+    background-color: #1ebc57;
+    border-color: #1ebc57;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* Botão Secundário (Voltar) */
+.lp-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #555 !important;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    transition: all 0.3s;
+    min-width: 140px;
+    text-align: center;
+}
+
+.lp-btn-secondary:hover {
+    border-color: #004aad;
+    color: #004aad !important;
+    background-color: #f9f9f9;
+    text-decoration: none;
+}
+
+/* Ajustes do Rodapé */
+.lp-footer-content {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.3); /* Linha sutil branca */
+    text-align: center; /* CENTRALIZADO */
+    color: white;
+}
+
+.emergency-note {
+    background-color: #f8f9fa;
+    color: #666;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 30px auto 0 auto;
+    font-size: 0.9rem;
+
+    /* ALTERADO AQUI: */
+    width: 100%;      /* Ocupa todo o espaço disponível */
+    max-width: 100%;  /* Remove o limite de 600px */
+
+    border: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    box-sizing: border-box; /* Importante: Garante que o padding não estoure a tela */
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .lp-buttons-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .lp-btn-primary, .lp-btn-secondary {
+        width: 100%;
+    }
 }
