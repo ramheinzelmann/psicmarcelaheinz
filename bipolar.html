@@ -25,18 +25,14 @@
     In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
     function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
+      // 1. Envia o aviso para o Google (sem travar a tela)
       gtag('event', 'conversion', {
-          'send_to': 'AW-16738267007/NKelCPjWjuEbEP_etq0-',
-          'value': 0.5,
-          'currency': 'BRL',
-          'event_callback': callback
+         'send_to': 'AW-16738267007/NKelCPjWjuEbEP_etq0-'
       });
-      return false;
+
+      // 2. Retorna true para autorizar o navegador a abrir o link normalmente
+      // (Isso fará o target="_blank" funcionar e abrir o WhatsApp em nova aba)
+      return true;
     }
     </script>
 
